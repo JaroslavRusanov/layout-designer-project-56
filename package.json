@@ -1,5 +1,5 @@
 {
-  "name": "Portal Music Box",
+  "name": "portal-music-box",
   "version": "1.0.0",
   "description": "trainer layout project lvl 2",
   "main": "index.js",
@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Iaroslav Rusanov",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.79.3"
+  }
 }
