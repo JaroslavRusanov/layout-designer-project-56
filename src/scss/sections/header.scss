@@ -1,0 +1,64 @@
+header {
+  position: absolute;
+  top: 25px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+nav a {
+  color: $text;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.common-group {
+  @extend %row;
+  justify-content: space-around;
+}
+
+.nav-group {
+  @extend %row;
+  gap: 90px;
+}
+
+.logo-group {
+  @extend %row;
+  gap: 16px
+}
+
+.link-group {
+  @extend %row;
+  gap: 24px
+}
+
+.header-input {
+  position: relative;
+  padding-left: 10px;
+
+  color: var(--text);
+  text-transform: uppercase;
+
+  border: 0;
+  border-radius: 20px;
+
+  background-color: $dark-transparent;
+
+}
+
+@media (max-width: 768px) {
+  .common-group {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .nav-group {
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .link-group {
+    flex-direction: column;
+    gap: 0;
+  }
+}

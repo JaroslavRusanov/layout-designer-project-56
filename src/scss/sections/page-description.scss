@@ -1,0 +1,110 @@
+h1, h2 {
+  @include mg-reset;
+  text-align: center;
+}
+
+.banner {
+  position: relative;
+  padding: 200px 0;
+  z-index: 1;
+}
+
+.banner::before {
+  position: absolute;
+  top: -100px;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../images/banner.png');
+  background-position: center;
+  background-size: cover;
+
+  content: "";
+
+  z-index: -1;
+}
+
+.banner-group {
+  @extend %col;
+  justify-content: center;
+  align-items: center;
+  color: $white;
+}
+
+.p-group {
+  @extend %row;
+  margin-top: 1.5rem;
+  gap: 5px;
+  text-align: center;
+}
+
+.form-group {
+  @extend %col;
+  max-width: 570px;
+
+}
+
+.input-group {
+  @extend %row;
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.input-p-description {
+  position: relative;
+  min-width: 244px;
+  min-height: 50px;
+
+  padding-left: 20px;
+  margin-bottom: 1.5rem;
+
+  border: solid 2px $text;
+  border-radius: 3px;
+
+  background-color: transparent;
+}
+
+.input-p-description::placeholder {
+  color: $white;
+}
+
+.btn-p-description {
+  padding: 20px 30px;
+
+  text-transform: uppercase;
+  color: $white;
+  background-color: $green;
+
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .banner-group {
+    padding-top: 78px;
+    flex-direction: column;
+  }
+
+  .p-group {
+    margin-top: 1rem;
+    flex-direction: column;
+    p {
+      @include mg-reset;
+    }
+
+  }
+
+  .form-group {
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .btn-p-description {
+    width: auto;
+  }
+}

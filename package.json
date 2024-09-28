@@ -9,6 +9,18 @@
   "author": "Iaroslav Rusanov",
   "license": "ISC",
   "dependencies": {
+    "pug": "^3.0.3",
+    "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.79.3"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "postcss-lit": "^1.1.1",
+    "stylelint": "^16.9.0",
+    "stylelint-config-standard": "^36.0.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-order": "^6.0.4",
+    "stylelint-scss": "^6.7.0",
+    "surge": "^0.24.6"
   }
 }

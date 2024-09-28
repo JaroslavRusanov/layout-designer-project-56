@@ -4,3 +4,5 @@
 ### Portal Music Box
 
 This is a trainer layout-designer project by Iaroslav Rusanov
+
+[Deploy](portal-ja-ru.surge.sh)

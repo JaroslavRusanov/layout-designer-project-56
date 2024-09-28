@@ -1,19 +1,8 @@
-:root {
-  --white: #fff;
-  --text: #CACACA;
-  --background: #08020D;
-  --light: #E0E0E0;
-  --dark-transparent: #3C3B3D;
-  --green: #34C176;
-  --orange: #F89202;
-  --violet: #5328A1;
-  --brown: #95390C;
-}
-
 @font-face {
   font-family: "Roboto Regular";
   src: url("../fonts/Roboto-Regular.ttf");
 }
+
 @font-face {
   font-family: "Roboto Bold";
   src: url("../fonts/Roboto-Bold.ttf");
@@ -24,11 +13,26 @@
   src: url("../fonts/Roboto-Medium.ttf");
 }
 
+%row {
+  display: flex;
+  flex-direction: row;
+}
+
+%col {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin mg-reset {
+  margin: 0;
+}
+
 body {
+  box-sizing: border-box;
   font-family: "Roboto Regular", sans-serif;
   line-height: 1.5;
-  color: var(--text);
-  background-color: var(--background);
+  color: $text;
+  background-color: $background;
 }
 
 h1 {
@@ -41,12 +45,33 @@ h2 {
   text-transform: uppercase;
 }
 
-@media (max-width: 760px) {
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+@media (max-width: 768px) {
   h1 {
     font: 30px/45px "Roboto Bold", sans-serif;
   }
   
   h2 {
     font: 18px/27px "Roboto Bold", sans-serif;
+  }
+
+  .container {
+    width: auto;
+    padding: 0 20px;
   }
 }

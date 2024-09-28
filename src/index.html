@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portal Music box. Iaroslav Rusanov</title>
-  <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
-  <h1>Hello</h1>
-  <h2>Good bye</h2>
-</body>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Music box. Iaroslav Rusanov</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="common-group">
+          <div class="nav-group">
+            <div class="logo-group"><img src="./images/logo.svg" alt="logo" width="24px" height="24px"><a href="#">Music Box</a></div>
+            <div class="link-group"><a href="#">Главная</a><a href="#">Каталог</a><a href="#">Исполнители</a><a href="#">Контакты</a></div>
+          </div>
+          <input class="header-input" type="text" id="search" placeholder="Поиск...">
+          <label class="sr-only" for="search">Поиск</label>
+        </nav>
+      </div>
+    </header>
+    <section id="page-description">
+      <div class="banner">
+        <div class="container">
+          <div class="banner-group">
+            <h1>Онлайн музыка где угодно</h1>
+            <h2>без ограничений</h2>
+            <div class="p-group">
+              <p>Получите доступ всего за несколько шагов.</p>
+              <p>Заполните форму ниже и откройте мир музыки</p>
+            </div>
+            <form class="form-group">
+              <div class="input-group">
+                <input class="input-p-description" type="text" id="name" placeholder="Имя">
+                <label class="sr-only" for="name">name</label>
+                <input class="input-p-description" type="text" id="email" placeholder="Email">
+                <label class="sr-only" for="email">email</label>
+              </div>
+              <button class="btn-p-description" type="submit">Получить доступ</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
