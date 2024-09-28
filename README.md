@@ -5,4 +5,4 @@
 
 This is a trainer layout-designer project by Iaroslav Rusanov
 
-[Deploy](portal-ja-ru.surge.sh)
+[Deploy](https://portal-ja-ru.surge.sh/)

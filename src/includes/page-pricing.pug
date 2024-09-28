@@ -1,0 +1,35 @@
+-
+  carts = [
+    {
+      header: 'Бесплатная',
+      cost: '0',
+      description: 'Оплата в месяц. Бесплатный тариф предоставляет доступ ко всей коллекции музыки. Присутствует реклама',
+      bgClass: 'bg-free',
+    },
+    {
+      header: 'Стандартная',
+      cost: '250',
+      description: 'Оплата в месяц. Стандартный тариф предоставляет доступ ко всей коллекции музыки в среднем качестве',
+      bgClass: 'bg-standart',
+    },
+    {
+      header: 'Премиум',
+      cost: '500',
+      description: 'Оплата в месяц. Премиум тариф предоставляет доступ ко всей коллекции музыки в высоком качестве',
+      bgClass: 'bg-premium',
+    },
+  ];
+
+section#p-pricing
+  .container
+    h2.pricing-header Формы подписки
+    .carts
+      each cart in carts
+        div(class=`pricing-item ${cart.bgClass}`)
+          h3.cart-header= cart.header
+          .price
+            .pricing-value= cart.cost
+            .pricing-currency руб.
+          a.pricing-btn(href="#") Оформить
+          .pricing-footer= cart.description
+    .text-pricing На всех тарифах возможно прослушивание музыки с мобильных устройств. На премиум тарифе вы можете скачать все композиции на ваше устройство и слушать музыку без подключения к интернету

@@ -27,8 +27,7 @@ h1, h2 {
 
 .banner-group {
   @extend %col;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-center;
   color: $white;
 }
 

@@ -13,14 +13,19 @@
   src: url("../fonts/Roboto-Medium.ttf");
 }
 
-.input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
+.price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
   display: flex;
   flex-direction: row;
 }
 
-.form-group, .banner-group {
+.pricing-item, .form-group, .banner-group {
   display: flex;
   flex-direction: column;
+}
+
+.pricing-item, .banner-group {
+  align-items: center;
+  padding: 0 1rem;
 }
 
 body {
@@ -153,8 +158,6 @@ h1, h2 {
 }
 
 .banner-group {
-  justify-content: center;
-  align-items: center;
   color: #fff;
 }
 
@@ -223,5 +226,120 @@ h1, h2 {
 
   .btn-p-description {
     width: auto;
+  }
+}
+
+.text-pricing {
+  text-align: center;
+}
+
+.pricing-header {
+  margin-bottom: 48px;
+}
+
+.carts {
+  margin-bottom: 2.5rem;
+  gap: 50px;
+}
+
+.pricing-item {
+  color: #fff;
+}
+
+.cart-header {
+  margin: 1rem;
+  padding-bottom: 200px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.bg-free {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-free::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  z-index: -1;
+}
+
+.bg-standart {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-standart::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  z-index: -1;
+}
+
+.bg-premium {
+  position: relative;
+  z-index: 1;
+}
+
+.bg-premium::before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 1rem;
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  z-index: -1;
+}
+
+.price {
+  margin-bottom: 40px;
+  align-items: start;
+  gap: 1rem;
+}
+
+.pricing-value {
+  font-size: 64px;
+}
+
+.pricing-currency {
+  padding-top: 1rem;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.pricing-btn {
+  min-width: 270px;
+  margin-bottom: 4rem;
+  padding: 20px;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  border: solid 2px #CACACA;
+  border-radius: 3px;
+  background-color: transparent;
+}
+
+.pricing-footer {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+@media (width <= 768px) {
+  .carts {
+    flex-direction: column;
   }
 }
