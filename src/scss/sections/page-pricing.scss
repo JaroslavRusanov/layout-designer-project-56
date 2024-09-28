@@ -1,9 +1,5 @@
-.text-pricing {
-  text-align: center;
-}
-
 .pricing-header {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
 }
 
 .carts {
@@ -93,7 +89,7 @@
 }
 
 .price {
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
   @extend %row;
   align-items: start;
   gap: 1rem;
@@ -135,4 +131,8 @@
   .carts {
     flex-direction: column;
   }
+}
+
+.text-pricing {
+  text-align: center;
 }

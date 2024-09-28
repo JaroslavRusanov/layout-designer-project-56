@@ -1,0 +1,70 @@
+#page-news {
+  padding-top: 100px;
+}
+
+.common-news-header {
+  margin-bottom: 48px;
+  color: $white;
+}
+
+.news-item {
+  margin-bottom: 65px;
+  @extend %row;
+  gap: 50px;
+}
+
+.news-item-reverse {
+  @extend %row;
+  flex-direction: row-reverse;
+  gap: 50px;
+}
+
+.news-header {
+  font: 30px/45px "Roboto Regular", sans-serif;
+  color: $white;
+}
+
+.news-text {
+  margin-bottom: 1.5rem;
+}
+
+.news-author {
+  @extend %row;
+  gap: 1rem;
+}
+
+.name-author {
+  color: $orange;
+  text-transform: uppercase;
+}
+
+.news-footer {
+  @extend %col;
+}
+
+.news-btn {
+  max-width: 135px;
+  margin-top: 3rem;
+  padding: 16px 30px;
+
+  color: $text;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  
+  border: solid 2px $text;
+  border-radius: 3px;
+
+  background-color: transparent
+}
+
+@media (max-width: 768px) {
+  .news-header {
+    font: 16px/24px "Roboto Regular", sans-serif;
+    text-transform: capitalize;
+  }
+
+  .news-item, .news-item-reverse {
+    flex-direction: column;
+  }
+}
