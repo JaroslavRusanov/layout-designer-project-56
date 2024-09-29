@@ -1,0 +1,54 @@
+-
+  const artists = [
+    {
+      url: './images/A-ha.png',
+      name: "A-ha",
+      followers: '417 086 поклонников',
+    },
+    {
+      url: './images/Tears for Fears.png',
+      name: "Tears For Fears",
+      followers: '434 086 поклонников',
+    },
+    {
+      url: './images/Duran Duran.png',
+      name: "Duran Duran",
+      followers: '631 071 поклонник',
+    },
+  {
+      url: './images/Jack Savoretti.png',
+      name: "Jack Savoretti",
+      followers: '26 857 поклонников',
+    },
+    {
+      url: './images/Keane.png',
+      name: "Keane",
+      followers: '1 704 358 поклонников',
+    },
+    {
+      url: './images/Frank Sinatra.png',
+      name: "Frank Sinatra",
+      followers: '41 653 882 поклонников',
+    },
+    {
+      url: './images/Paul Young.png',
+      name: "Paul Young",
+      followers: '50 329 поклонников',
+    },
+    {
+      url: './images/Chris Rea.png',
+      name: "Chris Rea",
+      followers: '73 351 поклонников',
+    },
+
+  ]
+
+section#page-similar
+  .container
+    h1 Похожие исполнители
+    .artists
+      each artist in artists
+        .artist
+          img(src=artist.url alt=artist.name width="250")
+          h3= artist.name
+          p= artist.followers

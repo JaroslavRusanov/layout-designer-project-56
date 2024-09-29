@@ -3,6 +3,7 @@
     color: $white;
   }
 }
+
 .tracks {
   padding-top: 1.5rem;
   @extend %row;
@@ -42,6 +43,9 @@
 }
 
 @media (max-width: 768px) {
+  h1 {
+    font: 18px/27px "Roboto Bold", sans-serif;
+  }
   .tracks {
     flex-direction: column;
     gap: 25px;

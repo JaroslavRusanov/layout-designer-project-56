@@ -1,0 +1,45 @@
+#page-similar {
+  padding-top: 100px;
+  h1 {
+    color: $white;
+  }
+}
+
+.artists {
+  margin-bottom: 100px;
+  padding-top: 2rem;
+  @extend %row;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 25px;
+}
+
+.artist {
+  @extend %col;
+  align-items: center;
+
+  h3 {
+    margin: 1rem 0 0;
+    color: $white;
+  }
+
+  p {
+    @include mg-reset;
+  }
+}
+
+@media (max-width: 768px) {
+  .artists {
+    img {
+      width: 137px;
+    }
+
+    p {
+      max-width: 137px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+  }
+}
