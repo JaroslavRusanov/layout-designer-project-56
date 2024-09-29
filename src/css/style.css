@@ -13,12 +13,12 @@
   src: url("../fonts/Roboto-Medium.ttf");
 }
 
-.news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
+.app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
   display: flex;
   flex-direction: row;
 }
 
-.news-footer, .pricing-item, .form-group, .banner-group {
+.text-app, .news-footer, .pricing-item, .form-group, .banner-group {
   display: flex;
   flex-direction: column;
 }
@@ -349,7 +349,7 @@ h1, h2 {
 }
 
 .common-news-header {
-  margin-bottom: 48px;
+  margin-bottom: 3rem;
   color: #fff;
 }
 
@@ -402,5 +402,44 @@ h1, h2 {
 
   .news-item, .news-item-reverse {
     flex-direction: column;
+  }
+}
+
+#page-app {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.header-app {
+  margin-bottom: 4rem;
+  color: #fff;
+}
+
+.app-body {
+  gap: 9rem;
+}
+
+.text-app {
+  gap: 1rem;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.btn-app {
+  max-width: 70px;
+  padding: 16px 40px;
+  color: #fff;
+  font-weight: 12.8px;
+  text-decoration: none;
+  border-radius: 32px;
+  background-color: #95390C;
+}
+
+@media (width <= 768px) {
+  .app-body {
+    flex-direction: column-reverse;
+    gap: 1rem;
   }
 }

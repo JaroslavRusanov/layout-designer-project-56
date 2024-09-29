@@ -1,0 +1,43 @@
+#page-app {
+  margin-bottom: 100px;
+  padding-top: 100px;
+}
+
+.header-app {
+  margin-bottom: 4rem;
+  color: $white;
+}
+
+.app-body {
+  @extend %row;
+  gap: 9rem;
+}
+
+.text-app {
+  @extend %col;
+  gap: 1rem;
+}
+
+.text {
+  max-width: 600px;
+}
+
+.btn-app {
+  max-width: 70px;
+  padding: 16px 40px;
+
+  color: $white;
+  font-weight: 12.8px;
+  text-decoration: none;
+  border-radius: 32px;
+
+  background-color: $brown;
+}
+
+@media (max-width: 768px) {
+  .app-body {
+    flex-direction: column-reverse;
+    gap: 1rem;
+  }
+}
+
