@@ -1,0 +1,38 @@
+#page-discography {
+  h1 {
+    padding-top: 100px;
+    color: $white;
+  }
+}
+
+.albums {
+  padding-top: 3rem;
+  @extend %row;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 25px;
+
+  h3 {
+    margin: 1rem 0 0;
+    font: 18px/27px "Roboto Bold", sans-serif;
+    text-transform: capitalize;
+  }
+
+  p {
+    @include mg-reset;
+    font: 16px/24px "Roboto Regular", sans-serif;
+    color: $light;
+  }
+}
+
+.album {
+  @extend %col;
+}
+
+@media (max-width: 768px) {
+  .albums {
+    img {
+      width: 137px;
+    }
+  }
+}

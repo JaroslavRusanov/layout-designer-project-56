@@ -13,12 +13,12 @@
   src: url("../fonts/Roboto-Medium.ttf");
 }
 
-.block-img, .track-item, .tracks, .btn-artist, .artist-links, .footer-bottom, .footer-icon, .footer-top, .app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
+.albums, .block-img, .track-item, .tracks, .btn-artist, .artist-links, .footer-bottom, .footer-icon, .footer-top, .app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
   display: flex;
   flex-direction: row;
 }
 
-.name, .footer-col, .text-app, .news-footer, .pricing-item, .form-group, .banner-group {
+.album, .name, .footer-col, .text-app, .news-footer, .pricing-item, .form-group, .banner-group {
   display: flex;
   flex-direction: column;
 }
@@ -595,5 +595,35 @@ nav a {
 
   .track-item {
     min-width: 22.5rem;
+  }
+}
+
+#page-discography h1 {
+  padding-top: 100px;
+  color: #fff;
+}
+
+.albums {
+  padding-top: 3rem;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 25px;
+}
+
+.albums h3 {
+  margin: 1rem 0 0;
+  font: 18px/27px "Roboto Bold", sans-serif;
+  text-transform: capitalize;
+}
+
+.albums p {
+  margin: 0;
+  font: 16px/24px "Roboto Regular", sans-serif;
+  color: #E0E0E0;
+}
+
+@media (width <= 768px) {
+  .albums img {
+    width: 137px;
   }
 }

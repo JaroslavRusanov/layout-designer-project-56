@@ -1,0 +1,43 @@
+-
+  const listOfDisc = [
+    {
+      url: './images/Brother.png',
+      name: 'Brother',
+      year: '2014',
+    },
+    {
+      url: './images/Out of My Hands.png',
+      name: 'Out of My Hands',
+      year: '2012',
+    },
+    {
+      url: './images/Letter from Egypt.png',
+      name: 'Letter from Egypt',
+      year: '2008',
+    },
+    {
+      url: './images/Vogts Villa.png',
+      name: 'Vogts Villa',
+      year: '1996',
+    },
+    {
+      url: './images/Wild Seed.png',
+      name: 'Wild Seed',
+      year: '1995',
+    },
+    {
+      url: './images/Poetenes Evangelium.png',
+      name: 'Poetenes Evangelium',
+      year: '1993',
+    },
+  ]
+
+section#page-discography
+  .container
+    h1 Дискография
+      .albums
+        each disc in listOfDisc
+          .album
+            img(src=disc.url alt=disc.name width="250")
+            h3= disc.name
+            p= disc.year
