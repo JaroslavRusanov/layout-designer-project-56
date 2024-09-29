@@ -25,7 +25,7 @@
 }
 
 .artist-links {
-  padding-top: 3rem;
+  padding: 3rem 0 100px;
   @extend %row;
   gap: 1.5rem;
 }
@@ -54,4 +54,16 @@
 
 .btn-artist:nth-child(even) {
   background-color: $brown;
+}
+
+@media (max-width: 768px) {
+  .artist-banner {
+    h1 {
+      margin-top: 3.5rem;
+    }
+  }
+
+  .artist-links {
+    flex-direction: column;
+  }
 }

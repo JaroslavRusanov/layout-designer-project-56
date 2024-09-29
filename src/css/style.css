@@ -13,12 +13,12 @@
   src: url("../fonts/Roboto-Medium.ttf");
 }
 
-.btn-artist, .artist-links, .footer-bottom, .footer-icon, .footer-top, .app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
+.block-img, .track-item, .tracks, .btn-artist, .artist-links, .footer-bottom, .footer-icon, .footer-top, .app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
   display: flex;
   flex-direction: row;
 }
 
-.footer-col, .text-app, .news-footer, .pricing-item, .form-group, .banner-group {
+.name, .footer-col, .text-app, .news-footer, .pricing-item, .form-group, .banner-group {
   display: flex;
   flex-direction: column;
 }
@@ -517,7 +517,7 @@ nav a {
 }
 
 .artist-links {
-  padding-top: 3rem;
+  padding: 3rem 0 100px;
   gap: 1.5rem;
 }
 
@@ -542,4 +542,58 @@ nav a {
 
 .btn-artist:nth-child(even) {
   background-color: #95390C;
+}
+
+@media (width <= 768px) {
+  .artist-banner h1 {
+    margin-top: 3.5rem;
+  }
+
+  .artist-links {
+    flex-direction: column;
+  }
+}
+
+#page-popular-track h1 {
+  color: #fff;
+}
+
+.tracks {
+  padding-top: 1.5rem;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 25px;
+}
+
+.track-item {
+  justify-content: space-between;
+  align-items: center;
+  min-width: 34.5rem;
+  font: 12.8px/19.2px "Roboto Bold", sans-serif;
+}
+
+.track-item h3 {
+  margin: 0;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.track-item p {
+  margin: 0;
+}
+
+.block-img {
+  align-items: center;
+  gap: 1rem;
+}
+
+@media (width <= 768px) {
+  .tracks {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .track-item {
+    min-width: 22.5rem;
+  }
 }

@@ -1,0 +1,52 @@
+#page-popular-track {
+  h1 {
+    color: $white;
+  }
+}
+.tracks {
+  padding-top: 1.5rem;
+  @extend %row;
+  flex-wrap: wrap;
+  gap: 50px;
+  row-gap: 25px;
+}
+
+.track-item {
+  @extend %row;
+  justify-content: space-between;
+  align-items: center;
+
+  min-width: 34.5rem;
+
+  font: 12.8px/19.2px "Roboto Bold", sans-serif;
+
+  h3 {
+    @include mg-reset;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  p {
+    @include mg-reset;
+  }
+}
+
+.block-img {
+  @extend %row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.name {
+  @extend %col;
+}
+
+@media (max-width: 768px) {
+  .tracks {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .track-item {
+    min-width: 22.5rem;
+  }
+}

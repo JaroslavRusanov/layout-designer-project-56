@@ -1,0 +1,53 @@
+-
+  const tracklist = [
+    {
+      url: './images/Wild Seed.png',
+      name: 'Spanish Step',
+      author: 'Morten Harket',
+      durance: '4:07',
+    },
+    {
+      url: './images/Letter from Egypt.png',
+      name: 'With You - With Me',
+      author: 'Morten Harket',
+      durance: '3:48',
+    },
+    {
+      url: './images/Brother.png',
+      name: 'Brother',
+      author: 'Morten Harket',
+      durance: '5:05',
+    },
+    {
+      url: './images/Wild Seed.png',
+      name: 'Brodsky Tune',
+      author: 'Morten Harket',
+      durance: '4:24',
+    },
+    {
+      url: './images/Letter from Egypt.png',
+      name: 'Darkspace',
+      author: 'Morten Harket',
+      durance: '3:45',
+    },
+    {
+      url: './images/Out of My Hands.png',
+      name: 'Burn Money Burn',
+      author: 'Morten Harket',
+      durance: '3:52',
+    },
+  ]
+
+section#page-popular-track
+  .container
+    h1 Популярные треки
+    .tracks 
+      each track in tracklist
+        .track-item
+          .block-img
+            img(src=track.url alt=track.name width="55")
+            .name
+              h3= track.name
+              p= track.author
+          p= track.durance
+
