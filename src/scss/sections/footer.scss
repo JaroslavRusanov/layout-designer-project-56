@@ -1,0 +1,53 @@
+.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+
+.footer-top {
+  padding: 3rem 0 4.5rem;
+  @extend %row;
+  gap: 2.5rem;
+}
+
+.footer-col {
+  h2 {
+    font: 18px/27px "Roboto Bold", sans-serif;
+  }
+
+  p {
+    @include mg-reset;
+  }
+
+  a {
+    text-decoration: none;
+    color: $text;
+  }
+
+  min-width: 270px;
+  @extend %col;
+}
+
+.footer-icon {
+  @extend %row;
+  gap: 1.5rem;
+}
+
+.footer-bottom {
+  padding: 1.5rem 0 2rem;
+  @extend %row;
+  gap: 1rem;
+
+  p {
+    @include mg-reset;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+}

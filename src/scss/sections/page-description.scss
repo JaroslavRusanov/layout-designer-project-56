@@ -1,9 +1,8 @@
-h1, h2 {
-  @include mg-reset;
-  text-align: center;
-}
-
 .banner {
+  h1, h2 {
+    @include mg-reset;
+    text-align: center;
+  }
   position: relative;
   padding: 200px 0;
   z-index: 1;
