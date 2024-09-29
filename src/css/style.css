@@ -13,7 +13,7 @@
   src: url("../fonts/Roboto-Medium.ttf");
 }
 
-.footer-bottom, .footer-icon, .footer-top, .app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
+.btn-artist, .artist-links, .footer-bottom, .footer-icon, .footer-top, .app-body, .news-author, .news-item-reverse, .news-item, .price, .carts, .input-group, .p-group, .link-group, .logo-group, .nav-group, .common-group {
   display: flex;
   flex-direction: row;
 }
@@ -492,4 +492,54 @@ nav a {
   .footer-bottom {
     flex-direction: column;
   }
+}
+
+.artist-banner {
+  position: relative;
+  padding: 200px 0;
+  z-index: 1;
+}
+
+.artist-banner h1, .artist-banner p {
+  margin: 0;
+}
+
+.artist-banner::before {
+  position: absolute;
+  top: -100px;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/Morten Harket.png");
+  background-position: center;
+  background-size: cover;
+  content: "";
+  z-index: -1;
+}
+
+.artist-links {
+  padding-top: 3rem;
+  gap: 1.5rem;
+}
+
+.btn-artist {
+  min-width: 200px;
+  padding: 20px 30px;
+  gap: 1rem;
+  background-color: #5328A1;
+  border-radius: 5px;
+}
+
+.btn-artist a {
+  font-size: 12.8px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.btn-artist img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+.btn-artist:nth-child(even) {
+  background-color: #95390C;
 }

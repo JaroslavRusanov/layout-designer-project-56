@@ -1,0 +1,57 @@
+.artist-banner {
+  h1, p {
+    @include mg-reset;
+  }
+
+  position: relative;
+  padding: 200px 0;
+  z-index: 1;
+}
+
+.artist-banner::before {
+  position: absolute;
+  top: -100px;
+
+  width: 100%;
+  height: 100%;
+
+  background-image: url('../images/Morten Harket.png');
+  background-position: center;
+  background-size: cover;
+
+  content: "";
+
+  z-index: -1;
+}
+
+.artist-links {
+  padding-top: 3rem;
+  @extend %row;
+  gap: 1.5rem;
+}
+
+.btn-artist {
+  min-width: 200px;
+  padding: 20px 30px;
+
+  @extend %row;
+  gap: 1rem;
+
+  background-color: $violet;
+  border-radius: 5px;
+
+  a {
+    font-size: 12.8px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $white;
+  }
+
+  img {
+    filter: invert(1) hue-rotate(180deg)
+  }
+}
+
+.btn-artist:nth-child(even) {
+  background-color: $brown;
+}
