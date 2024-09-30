@@ -1,9 +1,9 @@
-#page-discography {
-  h1 {
-    padding-top: 100px;
-    color: $white;
-  }
+.discography-header {
+  padding-top: 100px;
+  color: $white;
 }
+
+
 
 .albums {
   padding-top: 3rem;
@@ -27,6 +27,7 @@
 
 .album {
   @extend %col;
+  align-items: start;
 }
 
 @media (max-width: 768px) {
@@ -34,5 +35,12 @@
     img {
       width: 137px;
     }
+
+    h3 {
+      width: 140px;
+      word-break: keep-all;
+      text-align: start;
+    }
+
   }
 }

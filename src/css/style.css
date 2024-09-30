@@ -86,6 +86,7 @@ header {
 }
 
 nav a {
+  font: 11px/16.5px "Roboto Bold", sans-serif;
   color: #CACACA;
   text-transform: uppercase;
   text-decoration: none;
@@ -136,7 +137,7 @@ nav a {
 
 .banner {
   position: relative;
-  padding: 200px 0;
+  padding: 200px 0 300px;
   z-index: 1;
 }
 
@@ -207,11 +208,13 @@ nav a {
 
   .p-group {
     margin-top: 1rem;
-    flex-direction: column;
+    flex-flow: column nowrap;
+    justify-content: center;
   }
 
   .p-group p {
     margin: 0;
+    font: 14.5px/22px "Roboto Regular", sans-serif;
   }
 
   .form-group {
@@ -231,10 +234,12 @@ nav a {
 
 .pricing-header {
   margin-bottom: 3rem;
+  text-align: center;
+  color: #fff;
 }
 
 .carts {
-  margin-bottom: 2.5rem;
+  margin: 100px 0 2.5rem;
   gap: 50px;
 }
 
@@ -331,6 +336,7 @@ nav a {
 
 .pricing-footer {
   margin-bottom: 4rem;
+  font: 13.2px/19.2px "Roboto Regular", sans-serif;
   text-align: center;
 }
 
@@ -351,6 +357,7 @@ nav a {
 .common-news-header {
   margin-bottom: 3rem;
   color: #fff;
+  text-align: center;
 }
 
 .news-item {
@@ -413,6 +420,7 @@ nav a {
 .header-app {
   margin-bottom: 4rem;
   color: #fff;
+  text-align: center;
 }
 
 .app-body {
@@ -438,6 +446,10 @@ nav a {
 }
 
 @media (width <= 768px) {
+  .header-app {
+    margin-bottom: 3rem;
+  }
+
   .app-body {
     flex-direction: column-reverse;
     gap: 1rem;
@@ -496,12 +508,13 @@ nav a {
 
 .artist-banner {
   position: relative;
-  padding: 200px 0;
+  padding: 200px 0 300px;
   z-index: 1;
 }
 
-.artist-banner h1, .artist-banner p {
+.artist-banner h1 {
   margin: 0;
+  color: #fff;
 }
 
 .artist-banner::before {
@@ -516,13 +529,18 @@ nav a {
   z-index: -1;
 }
 
+.artist-header h1 {
+  margin: 0;
+  color: #fff;
+}
+
 .artist-links {
   padding: 3rem 0 100px;
   gap: 1.5rem;
 }
 
 .btn-artist {
-  min-width: 200px;
+  width: 140px;
   padding: 20px 30px;
   gap: 1rem;
   background-color: #5328A1;
@@ -555,6 +573,7 @@ nav a {
 }
 
 #page-popular-track h1 {
+  padding-top: 100px;
   color: #fff;
 }
 
@@ -588,7 +607,7 @@ nav a {
 }
 
 @media (width <= 768px) {
-  h1 {
+  #page-popular-track h1 {
     font: 18px/27px "Roboto Bold", sans-serif;
   }
 
@@ -602,7 +621,7 @@ nav a {
   }
 }
 
-#page-discography h1 {
+.discography-header {
   padding-top: 100px;
   color: #fff;
 }
@@ -626,9 +645,19 @@ nav a {
   color: #E0E0E0;
 }
 
+.album {
+  align-items: start;
+}
+
 @media (width <= 768px) {
   .albums img {
     width: 137px;
+  }
+
+  .albums h3 {
+    width: 140px;
+    word-break: keep-all;
+    text-align: start;
   }
 }
 
@@ -636,7 +665,8 @@ nav a {
   padding-top: 100px;
 }
 
-#page-similar h1 {
+#page-similar h2 {
+  margin: 0 0 2rem;
   color: #fff;
 }
 
@@ -667,9 +697,8 @@ nav a {
   }
 
   .artists p {
-    max-width: 137px;
-    display: flex;
-    flex-flow: column wrap;
+    width: 140px;
+    word-break: keep-all;
     text-align: center;
   }
 }

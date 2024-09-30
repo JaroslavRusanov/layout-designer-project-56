@@ -1,9 +1,11 @@
 .pricing-header {
   margin-bottom: 3rem;
+  text-align: center;
+  color: $white;
 }
 
 .carts {
-  margin-bottom: 2.5rem;
+  margin: 100px 0 2.5rem;
   @extend %row;
   gap: 50px;
 }
@@ -124,6 +126,8 @@
 
 .pricing-footer {
   margin-bottom: 4rem;
+
+  font: 13.2px/19.2px "Roboto Regular", sans-serif;
   text-align: center;
 }
 

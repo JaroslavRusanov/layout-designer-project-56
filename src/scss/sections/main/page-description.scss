@@ -4,7 +4,7 @@
     text-align: center;
   }
   position: relative;
-  padding: 200px 0;
+  padding: 200px 0 300px;
   z-index: 1;
 }
 
@@ -86,8 +86,12 @@
   .p-group {
     margin-top: 1rem;
     flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    
     p {
       @include mg-reset;
+      font: 14.5px/22px "Roboto Regular", sans-serif;
     }
 
   }

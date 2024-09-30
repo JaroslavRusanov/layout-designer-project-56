@@ -6,6 +6,7 @@
 .header-app {
   margin-bottom: 4rem;
   color: $white;
+  text-align: center;
 }
 
 .app-body {
@@ -35,6 +36,9 @@
 }
 
 @media (max-width: 768px) {
+  .header-app {
+    margin-bottom: 3rem;
+  }
   .app-body {
     flex-direction: column-reverse;
     gap: 1rem;
