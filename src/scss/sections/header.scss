@@ -16,15 +16,18 @@ nav a {
 .common-group {
   @extend %row;
   justify-content: space-around;
+  align-items: center
 }
 
 .nav-group {
   @extend %row;
+  align-items: center;
   gap: 90px;
 }
 
 .logo-group {
   @extend %row;
+  align-items: center;
   gap: 16px
 }
 
@@ -34,6 +37,8 @@ nav a {
 }
 
 .header-input {
+  width: 250px;
+  height: 25px;
   position: relative;
   padding-left: 10px;
 
@@ -51,15 +56,18 @@ nav a {
   .common-group {
     flex-direction: column;
     gap: 18px;
+    align-items: flex-start;
   }
 
   .nav-group {
     flex-direction: column;
     gap: 18px;
+    align-items: flex-start;
   }
 
   .link-group {
     flex-direction: column;
     gap: 0;
+    align-items: flex-start;
   }
 }

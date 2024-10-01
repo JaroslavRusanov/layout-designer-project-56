@@ -1,11 +1,11 @@
 .pricing-header {
-  margin-bottom: 3rem;
+  margin: 100px 0 3rem;
   text-align: center;
   color: $white;
 }
 
 .carts {
-  margin: 100px 0 2.5rem;
+  margin-bottom: 2.5rem;
   @extend %row;
   gap: 50px;
 }

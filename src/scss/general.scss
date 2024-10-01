@@ -52,7 +52,7 @@ h2 {
 
 .container {
   max-width: 1200px;
-  margin: auto;
+  margin-left: 120px;
 }
 
 .sr-only {
@@ -76,6 +76,7 @@ h2 {
   }
 
   .container {
+    margin: auto;
     padding: 0 20px;
   }
 }
