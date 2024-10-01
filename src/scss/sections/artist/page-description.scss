@@ -4,8 +4,12 @@
     color: $white;
   }
 
+  .container {
+    margin: auto;
+}
+
   position: relative;
-  padding: 200px 0 300px;
+  padding: 200px 0;
   z-index: 1;
 }
 

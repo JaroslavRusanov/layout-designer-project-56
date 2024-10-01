@@ -48,7 +48,6 @@ h2 {
 
 .container {
   max-width: 1200px;
-  margin-left: 120px;
 }
 
 .sr-only {
@@ -72,7 +71,6 @@ h2 {
   }
 
   .container {
-    margin: auto;
     padding: 0 20px;
   }
 }
@@ -465,6 +463,10 @@ nav a {
   }
 }
 
+footer .container {
+  margin: auto;
+}
+
 .bg-gradient {
   background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
 }
@@ -517,13 +519,17 @@ nav a {
 
 .artist-banner {
   position: relative;
-  padding: 200px 0 300px;
+  padding: 200px 0;
   z-index: 1;
 }
 
 .artist-banner h1 {
   margin: 0;
   color: #fff;
+}
+
+.artist-banner .container {
+  margin: auto;
 }
 
 .artist-banner::before {
@@ -585,7 +591,6 @@ nav a {
 }
 
 .popular-header {
-  padding-top: 100px;
   color: #fff;
 }
 
