@@ -1,5 +1,6 @@
 .discography-header {
-  padding-top: 100px;
+  @include mg-reset;
+  padding: 0 0 3rem;
   color: $white;
 }
 
@@ -11,7 +12,7 @@
   row-gap: 25px;
 
   h3 {
-    margin: 1rem 0 0;
+    padding: 1rem 0 0;
     font: 18px/27px "Roboto Bold", sans-serif;
     text-transform: capitalize;
   }

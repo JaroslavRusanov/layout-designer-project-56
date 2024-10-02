@@ -34,10 +34,11 @@
 
 body {
   box-sizing: border-box;
+  @include mg-reset;
   font-family: "Roboto Regular", sans-serif;
   line-height: 1.5;
   color: $text;
-  background-color: $background;
+  background-color: $dark-transparent;
 }
 
 h1 {
@@ -52,6 +53,11 @@ h2 {
 
 .container {
   max-width: 1200px;
+  padding: 100px 200px 0 20px;
+}
+
+.bg-dark {
+  background-color: $background;
 }
 
 .sr-only {

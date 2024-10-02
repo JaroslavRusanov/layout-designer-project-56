@@ -4,11 +4,8 @@
     color: $white;
   }
 
-  .container {
-    margin: auto;
-}
-
   position: relative;
+  margin-bottom: -100px;
   padding: 200px 0;
   z-index: 1;
 }
@@ -27,6 +24,10 @@
   content: "";
 
   z-index: -1;
+}
+
+.artist-banner-group {
+  margin: 0 120px;
 }
 
 .artist-header {
@@ -71,6 +72,13 @@
 }
 
 @media (max-width: 768px) {
+  .artist-banner-group {
+    margin: 0 20px;
+  }
+  
+  .artist-header {
+    padding-top: 0;
+  }
   .artist-banner {
     h1 {
       margin-top: 3.5rem;

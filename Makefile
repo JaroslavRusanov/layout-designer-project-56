@@ -1,11 +1,8 @@
 css:
 	sass ./src/scss/app.scss ./src/css/style.css -w
 
-main-html:
-	pug src/index.pug --pretty -w -o ./src/
-
-art-html:
-	pug src/artist.pug --pretty -w -o ./src/
+html:
+	pug src/index.pug --pretty -w -o ./src/ & pug src/artist.pug --pretty -w -o ./src/
 
 deploy:
 	npx surge ./src/

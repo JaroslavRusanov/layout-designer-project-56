@@ -3,6 +3,9 @@ header {
   top: 25px;
   left: 0;
   right: 0;
+
+  padding: 0;
+
   z-index: 2;
 }
 
@@ -53,6 +56,9 @@ nav a {
 }
 
 @media (max-width: 768px) {
+  header {
+    padding: 0 20px;
+  }
   .common-group {
     flex-direction: column;
     gap: 18px;
