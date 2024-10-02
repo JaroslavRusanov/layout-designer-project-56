@@ -1,5 +1,6 @@
 .popular-header {
-  margin: 0 0 3rem; 
+  margin: 0 0 3rem;
+  color: $white; 
 }
 
 .tracks {
@@ -42,7 +43,8 @@
 
 @media (max-width: 768px) {
   #page-popular-track {
-    h1 {
+    h2 {
+      padding-top: 100px;
       font: 18px/27px "Roboto Bold", sans-serif;
     }
   }

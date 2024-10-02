@@ -56,6 +56,10 @@
 }
 
 @media (max-width: 768px) {
+  .common-news-header {
+    padding-top: 100px;
+  }
+  
   .news-header {
     font: 16px/24px "Roboto Regular", sans-serif;
     text-transform: capitalize;

@@ -6,7 +6,7 @@
 
   position: relative;
   margin-bottom: -100px;
-  padding: 200px 0;
+  padding: 175px 0;
   z-index: 1;
 }
 
@@ -27,15 +27,19 @@
 }
 
 .artist-banner-group {
-  margin: 0 120px;
+  padding: 0 120px;
 }
 
 .artist-header {
   padding-top: 100px;
-  
-  h1 {
 
+  h1 {
     color: $white;
+  }
+
+  p {
+    @include mg-reset;
+    padding-top: 1rem;
   }
 }
 
@@ -73,11 +77,11 @@
 
 @media (max-width: 768px) {
   .artist-banner-group {
-    margin: 0 20px;
+    padding: 0 20px;
   }
   
   .artist-header {
-    padding-top: 0;
+    padding: 0;
   }
   .artist-banner {
     h1 {

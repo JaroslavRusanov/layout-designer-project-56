@@ -10,7 +10,10 @@
 
 .footer-col {
   h2 {
+    @include mg-reset;
+    padding-bottom: 1rem;
     font: 18px/27px "Roboto Bold", sans-serif;
+    color: $white;
   }
 
   p {
@@ -49,7 +52,7 @@ hr {
   .footer-top {
     padding: 4rem 20px 4.5rem;
     flex-direction: column;
-    gap: 1rem;
+    gap: 30px;
   }
 
   .footer-bottom {

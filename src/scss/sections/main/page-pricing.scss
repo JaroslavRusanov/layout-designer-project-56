@@ -132,6 +132,10 @@
 }
 
 @media (max-width: 768px) {
+  .pricing-header {
+    padding-top: 100px;
+  }
+
   .carts {
     flex-direction: column;
   }

@@ -6,7 +6,7 @@
 
   position: relative;
   margin-bottom: -100px;
-  padding: 200px 0 400px;
+  padding: 175px 0 300px;
   z-index: 1;
 }
 
@@ -34,7 +34,7 @@
 
 .p-group {
   @extend %row;
-  margin-top: 1.5rem;
+  padding-top: 1.5rem;
   gap: 5px;
   text-align: center;
 }
@@ -86,7 +86,7 @@
   }
 
   .p-group {
-    margin-top: 1rem;
+    padding-top: 1rem;
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
@@ -100,7 +100,7 @@
 
   .form-group {
     width: 100%;
-    margin-top: 1rem;
+    padding-top: 1rem;
   }
 
   .input-group {

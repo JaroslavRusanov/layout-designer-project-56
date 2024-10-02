@@ -12,6 +12,7 @@
   row-gap: 25px;
 
   h3 {
+    @include mg-reset;
     padding: 1rem 0 0;
     font: 18px/27px "Roboto Bold", sans-serif;
     text-transform: capitalize;
@@ -30,6 +31,10 @@
 }
 
 @media (max-width: 768px) {
+  .discography-header {
+    padding-top: 100px;
+  }
+
   .albums {
     img {
       width: 137px;
