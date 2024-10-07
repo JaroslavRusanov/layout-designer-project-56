@@ -17,6 +17,7 @@
 }
 
 .news-header {
+  margin: 0 0 30px;
   font: 30px/45px "Roboto Regular", sans-serif;
   color: $white;
 }
@@ -26,24 +27,25 @@
 }
 
 .news-author {
+  margin-bottom: 3rem;
   @extend %row;
   gap: 1rem;
+  font-size: 12.8px;
+  line-height: 19.2px;
 }
 
 .name-author {
   color: $orange;
   text-transform: uppercase;
-}
 
-.news-footer {
-  @extend %col;
 }
 
 .news-btn {
-  max-width: 135px;
-  margin-top: 3rem;
+  max-width: 105px;
   padding: 16px 30px;
 
+  font-size: 12.8px;
+  line-height: 19.2px;
   color: $text;
   text-decoration: none;
   text-transform: uppercase;

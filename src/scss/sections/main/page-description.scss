@@ -6,7 +6,7 @@
 
   position: relative;
   margin-bottom: -100px;
-  padding: 175px 0 300px;
+  padding: 200px 0 300px;
   z-index: 1;
 }
 
@@ -90,6 +90,7 @@
     flex-direction: column;
     justify-content: center;
     flex-wrap: nowrap;
+    gap: 0;
     
     p {
       @include mg-reset;

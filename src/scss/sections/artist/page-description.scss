@@ -5,14 +5,13 @@
   }
 
   position: relative;
-  margin-bottom: -100px;
-  padding: 175px 0;
+  padding: 200px 0;
   z-index: 1;
 }
 
 .artist-banner::before {
   position: absolute;
-  top: -100px;
+  margin-top: -200px;
 
   width: 100%;
   height: 100%;
@@ -31,7 +30,6 @@
 }
 
 .artist-header {
-  padding-top: 100px;
 
   h1 {
     color: $white;

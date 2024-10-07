@@ -35,9 +35,9 @@
 section#page-discography
   .container.bg-dark
     h2.discography-header Дискография
-      .albums
-        each disc in listOfDisc
-          .album
-            img(src=disc.url alt=disc.name width="250")
-            h3= disc.name
-            p= disc.year
+    .albums
+      each disc in listOfDisc
+        .album
+          img(src=disc.url alt=disc.name width="250")
+          h3= disc.name
+          p= disc.year
