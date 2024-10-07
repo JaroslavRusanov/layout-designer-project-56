@@ -34,7 +34,7 @@ body {
   font-family: "Roboto Regular", sans-serif;
   line-height: 1.5;
   color: #CACACA;
-  background-color: #3C3B3D;
+  background-color: #08020D;
 }
 
 h1 {
@@ -49,6 +49,7 @@ h2 {
 
 .container {
   max-width: 1200px;
+  margin: auto;
   padding: 100px 40px 0 20px;
 }
 

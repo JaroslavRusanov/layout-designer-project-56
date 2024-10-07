@@ -38,7 +38,7 @@ body {
   font-family: "Roboto Regular", sans-serif;
   line-height: 1.5;
   color: $text;
-  background-color: $dark-transparent;
+  background-color: $background;
 }
 
 h1 {
@@ -53,6 +53,7 @@ h2 {
 
 .container {
   max-width: 1200px;
+  margin: auto;
   padding: 100px 40px 0 20px;
 }
 
