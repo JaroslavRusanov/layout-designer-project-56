@@ -5,7 +5,7 @@
   }
 
   position: relative;
-  padding: 250px 0 150px;
+  padding: 250px 0 100px;
   z-index: 1;
 }
 
@@ -74,8 +74,13 @@
 
 @media (max-width: 768px) {
   .artist-banner {
-    padding: 200px 0 50px;
+    padding: 150px 0 100px;
   }
+
+  .artist-banner::before {
+    margin-top: -150px;
+  }
+
   .artist-banner-group {
     padding: 0 20px;
   }

@@ -5,8 +5,7 @@
   }
 
   position: relative;
-  margin-bottom: -100px;
-  padding: 200px 0 300px;
+  padding: 200px 0 200px;
   z-index: 1;
 }
 
@@ -81,8 +80,13 @@
 
 @media (max-width: 768px) {
   .banner {
-    padding-top: 200px;
+    padding: 250px 0 100px;
   }
+
+  .banner::before{
+    margin-top: -250px;
+  }
+
   .banner-group {
     flex-direction: column;
   }

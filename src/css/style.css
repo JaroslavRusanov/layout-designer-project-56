@@ -49,7 +49,7 @@ h2 {
 
 .container {
   max-width: 1200px;
-  padding: 100px 0 0 20px;
+  margin: 100px 0 0 20px;
 }
 
 .bg-dark {
@@ -78,7 +78,7 @@ h2 {
 
   .container {
     width: auto;
-    padding: 0 20px;
+    margin: 0 20px;
   }
 }
 
@@ -161,8 +161,7 @@ nav a {
 
 .banner {
   position: relative;
-  margin-bottom: -100px;
-  padding: 200px 0 300px;
+  padding: 200px 0;
   z-index: 1;
 }
 
@@ -227,7 +226,11 @@ nav a {
 
 @media (width <= 768px) {
   .banner {
-    padding-top: 200px;
+    padding: 250px 0 100px;
+  }
+
+  .banner::before {
+    margin-top: -250px;
   }
 
   .banner-group {
@@ -335,7 +338,6 @@ nav a {
 }
 
 .price {
-  margin-bottom: 1rem;
   align-items: start;
   gap: 1rem;
 }
@@ -407,11 +409,11 @@ nav a {
 }
 
 .news-text {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .news-author {
-  margin-bottom: 3rem;
+  margin-bottom: 3.5rem;
   gap: 1rem;
   font-size: 12.8px;
   line-height: 19.2px;
@@ -452,8 +454,7 @@ nav a {
 }
 
 .header-app {
-  margin: 0;
-  margin-bottom: 4rem;
+  margin: 0 0 4rem;
   color: #fff;
   text-align: center;
 }
@@ -482,7 +483,7 @@ nav a {
 
 @media (width <= 768px) {
   .header-app {
-    padding: 100px 0 3rem;
+    padding-top: 100px;
   }
 
   .app-body {
@@ -552,7 +553,7 @@ hr {
 
 .artist-banner {
   position: relative;
-  padding: 250px 0 150px;
+  padding: 250px 0 100px;
   z-index: 1;
 }
 
@@ -616,7 +617,11 @@ hr {
 
 @media (width <= 768px) {
   .artist-banner {
-    padding: 200px 0 50px;
+    padding: 150px 0 100px;
+  }
+
+  .artist-banner::before {
+    margin-top: -150px;
   }
 
   .artist-banner-group {
