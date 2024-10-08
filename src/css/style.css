@@ -498,7 +498,7 @@ nav a {
 }
 
 .footer-top {
-  padding: 4rem 100px 4.5rem;
+  padding: 62px 100px 4.5rem;
   gap: 2.5rem;
 }
 
@@ -508,7 +508,7 @@ nav a {
 
 .footer-col h2 {
   margin: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 15px;
   font: 18px/27px "Roboto Bold", sans-serif;
   color: #fff;
 }
@@ -527,7 +527,7 @@ nav a {
 }
 
 .footer-bottom {
-  padding: 2.5rem 100px 3rem;
+  padding: 2.5rem 100px 49px;
   gap: 1rem;
 }
 
@@ -547,7 +547,7 @@ hr {
   }
 
   .footer-bottom {
-    padding: 3.5rem 20px 3rem;
+    padding: 2.5rem 20px 47px;
     flex-direction: column;
   }
 }
