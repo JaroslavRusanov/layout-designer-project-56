@@ -3,7 +3,7 @@
 }
 
 .footer-top {
-  padding: 4rem 100px 5rem;
+  padding: 4rem 100px 4.5rem;
   @extend %row;
   gap: 2.5rem;
 }
@@ -11,7 +11,7 @@
 .footer-col {
   h2 {
     @include mg-reset;
-    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     font: 18px/27px "Roboto Bold", sans-serif;
     color: $white;
   }

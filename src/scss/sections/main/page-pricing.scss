@@ -18,7 +18,7 @@
 
 .cart-header {
   margin: 1rem 0 0;
-  padding-bottom: 152px;
+  padding-bottom: 160px;
 
   font-weight: 400;
   text-transform: uppercase;
@@ -91,7 +91,7 @@
 }
 
 .price {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   @extend %row;
   justify-content: flex-start;
   align-items: start;

@@ -11,11 +11,11 @@
 
 .text-app {
   @extend %col;
-  gap: 1rem;
 }
 
 .text {
   max-width: 600px;
+  margin:0 0 1rem;
 }
 
 .btn-app {

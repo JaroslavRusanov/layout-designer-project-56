@@ -5,13 +5,13 @@
   }
 
   position: relative;
-  padding: 200px 0 100px;
+  padding: 250px 0 150px;
   z-index: 1;
 }
 
 .artist-banner::before {
   position: absolute;
-  margin-top: -200px;
+  margin-top: -250px;
 
   width: 100%;
   height: 100%;
@@ -74,11 +74,11 @@
 
 @media (max-width: 768px) {
   .artist-banner {
-    padding: 175px 0 100px;
+    padding: 225px 0 125px;
   }
 
   .artist-banner::before {
-    margin-top: -175px;
+    margin-top: -225px;
   }
 
   .artist-banner-group {
@@ -90,7 +90,7 @@
   }
   .artist-banner {
     h1 {
-      margin-top: 3.5rem;
+      @include mg-reset;
     }
   }
 
