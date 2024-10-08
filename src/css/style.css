@@ -241,7 +241,6 @@ nav a {
   }
 
   .p-group {
-    padding-top: 1rem;
     flex-flow: column nowrap;
     justify-content: center;
     gap: 0;
@@ -254,7 +253,7 @@ nav a {
 
   .form-group {
     width: 100%;
-    padding-top: 1rem;
+    margin-top: 1rem;
   }
 
   .input-group {
@@ -284,7 +283,7 @@ nav a {
 
 .cart-header {
   margin: 1rem 0 0;
-  padding-bottom: 160px;
+  padding-bottom: 184px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -561,7 +560,7 @@ hr {
 
 .artist-banner h1 {
   margin: 0;
-  color: #fff;
+  margin-bottom: 1rem;
 }
 
 .artist-banner::before {
@@ -586,11 +585,11 @@ hr {
 
 .artist-header p {
   margin: 0;
-  padding-top: 1rem;
+  padding-bottom: 3rem;
 }
 
 .artist-links {
-  padding: 3rem 0 100px;
+  padding-bottom: 100px;
   gap: 1.5rem;
 }
 
@@ -644,7 +643,8 @@ hr {
 }
 
 .popular-header {
-  margin: 0 0 3rem;
+  margin: 0;
+  padding: 0 0 3rem;
   color: #fff;
 }
 
@@ -677,7 +677,7 @@ hr {
 }
 
 @media (width <= 768px) {
-  #page-popular-track h2 {
+  .popular-header {
     padding-top: 100px;
     font: 18px/27px "Roboto Bold", sans-serif;
   }
@@ -740,7 +740,7 @@ hr {
 
 .similar-header {
   margin: 0;
-  margin: 0 0 3rem;
+  padding: 0 0 3rem;
   color: #fff;
 }
 
@@ -757,7 +757,7 @@ hr {
 
 .artist h3 {
   margin: 0;
-  margin-top: 1rem;
+  padding-top: 1rem;
   color: #fff;
 }
 

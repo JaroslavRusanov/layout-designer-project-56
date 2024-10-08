@@ -1,5 +1,6 @@
 .popular-header {
-  margin: 0 0 3rem;
+  @include mg-reset;
+  padding: 0 0 3rem;
   color: $white; 
 }
 
@@ -41,12 +42,11 @@
 }
 
 @media (max-width: 768px) {
-  #page-popular-track {
-    h2 {
-      padding-top: 100px;
-      font: 18px/27px "Roboto Bold", sans-serif;
-    }
+  .popular-header {
+    padding-top: 100px;
+    font: 18px/27px "Roboto Bold", sans-serif;
   }
+
 
   .tracks {
     flex-direction: column;

@@ -1,6 +1,6 @@
 .similar-header {
   @include mg-reset;
-  margin: 0 0 3rem;
+  padding: 0 0 3rem;
   color: $white;
 }
 
@@ -18,7 +18,7 @@
 
   h3 {
     @include mg-reset;
-    margin-top: 1rem;
+    padding-top: 1rem;
     color: $white;
   }
 
