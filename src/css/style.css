@@ -48,7 +48,7 @@ h2 {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
   padding: 100px 0 0 20px;
 }
 
@@ -173,7 +173,7 @@ nav a {
 
 .banner::before {
   position: absolute;
-  top: -100px;
+  margin-top: -200px;
   width: 100%;
   height: 100%;
   background-image: url("../images/banner.png");
@@ -227,7 +227,7 @@ nav a {
 
 @media (width <= 768px) {
   .banner {
-    padding-top: 250px;
+    padding-top: 200px;
   }
 
   .banner-group {
@@ -335,7 +335,7 @@ nav a {
 }
 
 .price {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   align-items: start;
   gap: 1rem;
 }
@@ -401,13 +401,13 @@ nav a {
 }
 
 .news-header {
-  margin: 0 0 30px;
+  margin: 0 0 1rem;
   font: 30px/45px "Roboto Regular", sans-serif;
   color: #fff;
 }
 
 .news-text {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .news-author {
@@ -453,7 +453,7 @@ nav a {
 
 .header-app {
   margin: 0;
-  padding-bottom: 4rem;
+  margin-bottom: 4rem;
   color: #fff;
   text-align: center;
 }
@@ -496,7 +496,7 @@ nav a {
 }
 
 .footer-top {
-  padding: 3rem 100px 5rem;
+  padding: 4rem 100px 5rem;
   gap: 2.5rem;
 }
 
@@ -615,6 +615,10 @@ hr {
 }
 
 @media (width <= 768px) {
+  .artist-banner {
+    padding: 200px 0 50px;
+  }
+
   .artist-banner-group {
     padding: 0 20px;
   }
@@ -729,7 +733,7 @@ hr {
 
 .similar-header {
   margin: 0;
-  padding: 0 0 3rem;
+  margin: 0 0 3rem;
   color: #fff;
 }
 
