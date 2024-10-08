@@ -1,7 +1,8 @@
 header {
   position: absolute;
   top: 25px;
-  width: 1200px;
+
+  width: 100vw;
 
   z-index: 2;
 }
@@ -15,14 +16,16 @@ nav a {
 
 .common-group {
   @extend %row;
-  justify-content: space-around;
-  align-items: center
+  justify-content: space-between;
+  align-items: center;
 }
 
 .nav-group {
   @extend %row;
   align-items: center;
   gap: 90px;
+
+  padding-left: 120px;
 }
 
 .logo-group {
@@ -37,6 +40,7 @@ nav a {
 }
 
 .header-input {
+  margin-right: 120px;
   width: 250px;
   height: 25px;
   position: relative;
@@ -49,12 +53,12 @@ nav a {
   border-radius: 20px;
 
   background-color: $dark-transparent;
-
 }
 
 @media (max-width: 768px) {
   header {
     padding: 0 20px;
+    width: auto;
   }
   .common-group {
     flex-direction: column;
@@ -66,11 +70,17 @@ nav a {
     flex-direction: column;
     gap: 18px;
     align-items: flex-start;
+
+    padding-left: 0;
   }
 
   .link-group {
     flex-direction: column;
     gap: 0;
     align-items: flex-start;
+  }
+
+  .header-input {
+    margin-right: 0;
   }
 }

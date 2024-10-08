@@ -80,8 +80,10 @@
 }
 
 @media (max-width: 768px) {
+  .banner {
+    padding-top: 250px;
+  }
   .banner-group {
-    padding-top: 78px;
     flex-direction: column;
   }
 

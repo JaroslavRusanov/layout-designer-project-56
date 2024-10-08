@@ -11,6 +11,7 @@
 }
 
 .news-item-reverse {
+  margin-bottom: 65px;
   @extend %row;
   flex-direction: row-reverse;
   gap: 50px;

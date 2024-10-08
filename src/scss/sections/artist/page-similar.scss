@@ -1,12 +1,11 @@
 .similar-header {
   @include mg-reset;
-  padding: 100px 0 3rem;
+  padding: 0 0 3rem;
   color: $white;
 }
 
 .artists {
-  padding-bottom: 100px;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
   @extend %row;
   flex-wrap: wrap;
   gap: 50px;
@@ -31,11 +30,7 @@
 @media (max-width: 768px) {
   .artists {
     img {
-      width: 137px;
-    }
-
-    .similar-header {
-      padding-top: 100px;
+      width: 140px;
     }
 
     p {
@@ -43,5 +38,8 @@
       word-break: keep-all;
       text-align: center;
     }
+  }
+  .similar-header {
+    padding-top: 100px;
   }
 }

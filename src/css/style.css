@@ -48,8 +48,8 @@ h2 {
 }
 
 .container {
-  max-width: 1200px;
-  padding: 100px 40px 0 20px;
+  width: 1200px;
+  padding: 100px 0 0 20px;
 }
 
 .bg-dark {
@@ -77,6 +77,7 @@ h2 {
   }
 
   .container {
+    width: auto;
     padding: 0 20px;
   }
 }
@@ -84,7 +85,7 @@ h2 {
 header {
   position: absolute;
   top: 25px;
-  width: 1200px;
+  width: 100vw;
   z-index: 2;
 }
 
@@ -96,13 +97,14 @@ nav a {
 }
 
 .common-group {
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
 .nav-group {
   align-items: center;
   gap: 90px;
+  padding-left: 120px;
 }
 
 .logo-group {
@@ -115,6 +117,7 @@ nav a {
 }
 
 .header-input {
+  margin-right: 120px;
   width: 250px;
   height: 25px;
   position: relative;
@@ -129,6 +132,7 @@ nav a {
 @media (width <= 768px) {
   header {
     padding: 0 20px;
+    width: auto;
   }
 
   .common-group {
@@ -141,12 +145,17 @@ nav a {
     flex-direction: column;
     gap: 18px;
     align-items: flex-start;
+    padding-left: 0;
   }
 
   .link-group {
     flex-direction: column;
     gap: 0;
     align-items: flex-start;
+  }
+
+  .header-input {
+    margin-right: 0;
   }
 }
 
@@ -217,8 +226,11 @@ nav a {
 }
 
 @media (width <= 768px) {
+  .banner {
+    padding-top: 250px;
+  }
+
   .banner-group {
-    padding-top: 78px;
     flex-direction: column;
   }
 
@@ -323,7 +335,7 @@ nav a {
 }
 
 .price {
-  margin-bottom: 2.5rem;
+  margin-bottom: 2rem;
   align-items: start;
   gap: 1rem;
 }
@@ -383,6 +395,7 @@ nav a {
 }
 
 .news-item-reverse {
+  margin-bottom: 65px;
   flex-direction: row-reverse;
   gap: 50px;
 }
@@ -446,7 +459,6 @@ nav a {
 }
 
 .app-body {
-  padding-bottom: 100px;
   gap: 9rem;
 }
 
@@ -533,14 +545,14 @@ hr {
   }
 
   .footer-bottom {
-    padding: 3.5rem 20px 4rem;
+    padding: 3.5rem 20px 3rem;
     flex-direction: column;
   }
 }
 
 .artist-banner {
   position: relative;
-  padding: 200px 0;
+  padding: 250px 0 150px;
   z-index: 1;
 }
 
@@ -551,7 +563,7 @@ hr {
 
 .artist-banner::before {
   position: absolute;
-  margin-top: -200px;
+  margin-top: -250px;
   width: 100%;
   height: 100%;
   background-image: url("../images/Morten Harket.png");
@@ -686,6 +698,7 @@ hr {
   padding: 1rem 0 0;
   font: 18px/27px "Roboto Bold", sans-serif;
   text-transform: capitalize;
+  color: #fff;
 }
 
 .albums p {
@@ -708,7 +721,7 @@ hr {
   }
 
   .albums h3 {
-    width: 140px;
+    width: 137px;
     word-break: keep-all;
     text-align: start;
   }
@@ -716,13 +729,12 @@ hr {
 
 .similar-header {
   margin: 0;
-  padding: 100px 0 3rem;
+  padding: 0 0 3rem;
   color: #fff;
 }
 
 .artists {
-  padding-bottom: 100px;
-  padding-top: 2rem;
+  padding-bottom: 2rem;
   flex-wrap: wrap;
   gap: 50px;
   row-gap: 25px;
@@ -744,16 +756,16 @@ hr {
 
 @media (width <= 768px) {
   .artists img {
-    width: 137px;
-  }
-
-  .artists .similar-header {
-    padding-top: 100px;
+    width: 140px;
   }
 
   .artists p {
     width: 140px;
     word-break: keep-all;
     text-align: center;
+  }
+
+  .similar-header {
+    padding-top: 100px;
   }
 }
