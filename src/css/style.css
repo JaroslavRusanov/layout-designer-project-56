@@ -49,7 +49,8 @@ h2 {
 
 .container {
   max-width: 1200px;
-  margin: 100px 0 0 20px;
+  margin-left: 20px;
+  padding-top: 100px;
 }
 
 .bg-dark {
@@ -79,6 +80,7 @@ h2 {
   .container {
     width: auto;
     margin: 0 20px;
+    padding: 0;
   }
 }
 
@@ -187,7 +189,7 @@ nav a {
 }
 
 .p-group {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   gap: 5px;
   text-align: center;
 }
@@ -226,7 +228,7 @@ nav a {
 
 @media (width <= 768px) {
   .banner {
-    padding: 250px 0 100px;
+    padding: 250px 0 200px;
   }
 
   .banner::before {
@@ -281,7 +283,7 @@ nav a {
 
 .cart-header {
   margin: 1rem 0 0;
-  padding-bottom: 200px;
+  padding-bottom: 152px;
   font-weight: 400;
   text-transform: uppercase;
 }
@@ -338,6 +340,8 @@ nav a {
 }
 
 .price {
+  margin-bottom: 2rem;
+  justify-content: flex-start;
   align-items: start;
   gap: 1rem;
 }
@@ -553,7 +557,7 @@ hr {
 
 .artist-banner {
   position: relative;
-  padding: 250px 0 100px;
+  padding: 200px 0 100px;
   z-index: 1;
 }
 
@@ -564,7 +568,7 @@ hr {
 
 .artist-banner::before {
   position: absolute;
-  margin-top: -250px;
+  margin-top: -200px;
   width: 100%;
   height: 100%;
   background-image: url("../images/Morten Harket.png");
@@ -617,11 +621,11 @@ hr {
 
 @media (width <= 768px) {
   .artist-banner {
-    padding: 150px 0 100px;
+    padding: 175px 0 100px;
   }
 
   .artist-banner::before {
-    margin-top: -150px;
+    margin-top: -175px;
   }
 
   .artist-banner-group {

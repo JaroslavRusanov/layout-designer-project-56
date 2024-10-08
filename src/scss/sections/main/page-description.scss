@@ -33,7 +33,7 @@
 
 .p-group {
   @extend %row;
-  padding-top: 1.5rem;
+  padding-top: 1rem;
   gap: 5px;
   text-align: center;
 }
@@ -41,7 +41,6 @@
 .form-group {
   @extend %col;
   max-width: 570px;
-
 }
 
 .input-group {
@@ -80,7 +79,7 @@
 
 @media (max-width: 768px) {
   .banner {
-    padding: 250px 0 100px;
+    padding: 250px 0 200px;
   }
 
   .banner::before{

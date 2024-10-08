@@ -53,7 +53,8 @@ h2 {
 
 .container {
   max-width: 1200px;
-  margin: 100px 0 0 20px;
+  margin-left: 20px;
+  padding-top: 100px;
 }
 
 .bg-dark {
@@ -83,5 +84,6 @@ h2 {
   .container {
     width: auto;
     margin: 0 20px;
+    padding: 0;
   }
 }
