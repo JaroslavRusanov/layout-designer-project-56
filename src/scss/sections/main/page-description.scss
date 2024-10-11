@@ -51,8 +51,8 @@
 
 .input-p-description {
   position: relative;
-  min-width: 244px;
-  min-height: 50px;
+  width: 244px;
+  height: 48px;
 
   padding-left: 20px;
   margin-bottom: 1.5rem;
@@ -113,7 +113,8 @@
     gap: 0;
   }
 
-  .btn-p-description {
-    width: auto;
+  .input-p-description {
+    width: 354px;
   }
+
 }

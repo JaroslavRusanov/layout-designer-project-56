@@ -6,24 +6,24 @@
 
 .app-body {
   @extend %row;
-  gap: 9rem;
-}
-
-.text-app {
-  @extend %col;
+  justify-content: space-between;
 }
 
 .text {
   max-width: 600px;
-  margin:0 0 1rem;
+  margin: 0 0 1rem;
 }
 
 .btn-app {
-  max-width: 70px;
+
+  
+  width: 51px;
+
   padding: 16px 40px;
 
   color: $white;
-  font-weight: 12.8px;
+  font-size: 12.8px;
+  line-height: 19.2;
   text-decoration: none;
   border-radius: 32px;
 

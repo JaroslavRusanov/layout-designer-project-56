@@ -18,7 +18,7 @@
   flex-direction: row;
 }
 
-.artist, .album, .name, .footer-col, .text-app, .pricing-item, .form-group, .banner-group {
+.artist, .album, .name, .footer-col, .pricing-item, .form-group, .banner-group {
   display: flex;
   flex-direction: column;
 }
@@ -49,8 +49,8 @@ h2 {
 
 .container {
   width: 1200px;
-  margin-left: 20px;
-  padding-top: 100px;
+  margin: auto;
+  padding: 100px 0 0 10px;
 }
 
 .bg-dark {
@@ -206,8 +206,8 @@ nav a {
 
 .input-p-description {
   position: relative;
-  min-width: 244px;
-  min-height: 50px;
+  width: 244px;
+  height: 48px;
   padding-left: 20px;
   margin-bottom: 1.5rem;
   border: solid 2px #CACACA;
@@ -261,8 +261,8 @@ nav a {
     gap: 0;
   }
 
-  .btn-p-description {
-    width: auto;
+  .input-p-description {
+    width: 354px;
   }
 }
 
@@ -464,7 +464,7 @@ nav a {
 }
 
 .app-body {
-  gap: 9rem;
+  justify-content: space-between;
 }
 
 .text {
@@ -473,10 +473,11 @@ nav a {
 }
 
 .btn-app {
-  max-width: 70px;
+  width: 51px;
   padding: 16px 40px;
   color: #fff;
-  font-weight: 12.8px;
+  font-size: 12.8px;
+  line-height: 19.2;
   text-decoration: none;
   border-radius: 32px;
   background-color: #95390C;
@@ -554,13 +555,13 @@ hr {
 
 .artist-banner {
   position: relative;
-  padding: 250px 0 150px;
+  padding: 250px 0 125px;
   z-index: 1;
 }
 
 .artist-banner h1 {
   margin: 0;
-  margin-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .artist-banner::before {
@@ -629,14 +630,6 @@ hr {
     padding: 0 20px;
   }
 
-  .artist-header {
-    padding: 0;
-  }
-
-  .artist-banner h1 {
-    margin: 0;
-  }
-
   .artist-links {
     flex-direction: column;
   }
@@ -657,7 +650,7 @@ hr {
 .track-item {
   justify-content: space-between;
   align-items: center;
-  min-width: 34.5rem;
+  width: 34.5rem;
   font: 12.8px/19.2px "Roboto Bold", sans-serif;
 }
 
@@ -688,7 +681,7 @@ hr {
   }
 
   .track-item {
-    min-width: 22.5rem;
+    width: 22.5rem;
   }
 }
 
@@ -745,7 +738,7 @@ hr {
 }
 
 .artists {
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
   flex-wrap: wrap;
   gap: 50px;
   row-gap: 25px;
@@ -767,11 +760,11 @@ hr {
 
 @media (width <= 768px) {
   .artists img {
-    width: 140px;
+    width: 137px;
   }
 
   .artists p {
-    width: 140px;
+    width: 137px;
     word-break: keep-all;
     text-align: center;
   }

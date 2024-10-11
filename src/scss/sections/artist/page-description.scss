@@ -1,11 +1,11 @@
 .artist-banner {
   h1 {
     @include mg-reset;
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
   }
 
   position: relative;
-  padding: 250px 0 150px;
+  padding: 250px 0 125px;
   z-index: 1;
 }
 
@@ -83,15 +83,6 @@
 
   .artist-banner-group {
     padding: 0 20px;
-  }
-  
-  .artist-header {
-    padding: 0;
-  }
-  .artist-banner {
-    h1 {
-      @include mg-reset;
-    }
   }
 
   .artist-links {

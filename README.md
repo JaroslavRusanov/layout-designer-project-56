@@ -8,4 +8,6 @@ This is a trainer layout-designer project by Iaroslav Rusanov
 #### Technology
 HTML, CSS, SASS, PUG, stylelint, htmlhint, Adaptive layout
 
-[Deploy](https://portal-ja-ru.surge.sh/)
+[Deploy main](https://portal-ja-ru.surge.sh/)
+
+[Deploy artist](https://music-box-artist-ja-ru.surge.sh/)
